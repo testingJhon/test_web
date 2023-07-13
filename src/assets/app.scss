@@ -8,6 +8,7 @@ body {
   padding: 0;
   background-color: #fff7ed;
   font-family: "Inter";
+  // min-height: 100%;
 }
 
 body::-webkit-scrollbar {
@@ -119,7 +120,7 @@ footer {
   margin: auto;
   font-weight: 500;
   width: 100%;
-  bottom: 0;
+  bottom: 0px;
   position: fixed;
 }
 
@@ -147,17 +148,32 @@ a.back-button {
   font-size: 1.2rem;
 }
 
+section.product-detail {
+  border: solid red;
+  // display: flex;
+  justify-content: center;
+}
+
 .lana-detail-container {
   background-color: white;
-  margin: 30px 26px;
+  // margin: 30px 26px;
+  margin: 26px auto;
   padding: 24px;
+  max-width: 80vw;
+  .lana-detail {
+    border: red solid;
+  }
+}
+
+img.select-photo {
+  max-height: 150px;
 }
 
 div.lana-detail {
   display: flex;
   align-items: center;
-  > img {
-    height: 200px;
+  img {
+    max-height: 200px;
     margin-right: 20px;
   }
   .lana-detail-info-text {

@@ -1,18 +1,24 @@
+import { useState } from "react";
 import { Link, NavLink, Outlet, Route, useParams } from "react-router-dom";
 
 const data_lana = [
   {
     id: 1,
     tipo: "bola",
-    img: "https://www.mundolanar.com/blog/wp-content/uploads/2013/12/tres-conos.jpg",
+    img: [
+      "https://www.mundolanar.com/blog/wp-content/uploads/2013/12/tres-conos.jpg",
+      "https://pe.all.biz/img/pe/catalog/24521.jpeg",
+    ],
     price_sol: 36,
     price_dol: 4,
-    description: "mucho texto aqui",
   },
   {
     id: 2,
     tipo: "cono",
-    img: "https://www.mundolanar.com/blog/wp-content/uploads/2013/12/tres-conos.jpg",
+    img: [
+      "https://www.mundolanar.com/blog/wp-content/uploads/2013/12/tres-conos.jpg",
+      "https://pe.all.biz/img/pe/catalog/24521.jpeg",
+    ],
     price_sol: 36,
     price_dol: 4,
   },
@@ -20,11 +26,13 @@ const data_lana = [
 
 function findLanaID(id) {
   const list1 = data_lana.filter((a) => a.id == id)[0];
-  console.log(list1);
+  // console.log(list1);
+  const [index, setIndex] = useState(0);
+  const recibirParametro = (val) => setIndex(val);
   const details = (
     <div className="lana-detail-container">
       <div className="lana-detail">
-        <img src={list1.img}></img>
+        <img src={list1.img[index]}></img>
         <div className="lana-detail-info-text">
           <h2>{list1.tipo}</h2>
           <p className="product-precio">$ {list1.price_dol}</p>
@@ -38,7 +46,10 @@ function findLanaID(id) {
         <NavLink to="colors">colors</NavLink>
         <NavLink to="details">details</NavLink>
       </nav>
-      <Outlet context={{ list1 }} />
+      <Outlet
+        context={{ list1, recibirParametro }}
+        // recibirParametro={recibirParametro}
+      />
     </div>
   );
   return details;
