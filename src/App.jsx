@@ -5,7 +5,7 @@ import { BrowserRouter, Routes, Route, Link, Outlet } from "react-router-dom";
 
 import Home from "./pages/home";
 import About from "./pages/about";
-import Products from "./pages/products";
+import Products from "./pages/Products";
 import ProductDetail from "./pages/product_detail";
 
 import Layout from "./components/Layout";
@@ -20,7 +20,11 @@ import Details from "./pages/products/Details";
 import Colors from "./pages/products/ColorsList";
 import Photos from "./pages/products/Photos";
 
+import "./assets/colors.scss";
+// import "./assets/navbar.scss";
 import "./assets/app.scss";
+import "./assets/styles_base.scss";
+import "./assets/products.scss";
 
 function App() {
   return (

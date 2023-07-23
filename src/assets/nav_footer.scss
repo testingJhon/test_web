@@ -1,0 +1,65 @@
+@import "./colors.scss";
+header {
+  a {
+    color: $primary-color;
+    text-decoration: none;
+    font-style: normal;
+    // text-decoration: uppercase;
+
+    span.logo-puca {
+      color: $secondary-color;
+      margin-right: 3px;
+      font-weight: 600;
+    }
+    span.logo-sufix {
+      font-size: 8px;
+      color: $secondary-color;
+    }
+  }
+  nav {
+    margin-left: auto;
+    font-size: 15px;
+    font-weight: 500;
+    color: red;
+    a {
+      padding-left: 10px;
+    }
+    a.active {
+      font-weight: 600;
+      text-decoration: none;
+    }
+  }
+}
+
+a.site-logo {
+  font-size: 18px;
+}
+
+footer {
+  background-color: $terciary-color;
+  color: $primary-color;
+  font-weight: 500;
+  // color: $terciary-color;
+  font-size: 12px;
+  height: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+
+  justify-content: space-around;
+  flex-shrink: 0;
+  align-items: center;
+  margin: auto;
+  font-weight: 500;
+  width: 100%;
+  bottom: 0px;
+  position: fixed;
+}
+
+.site-logo-footer {
+  font-weight: 500;
+  span {
+    color: $secondary-color;
+  }
+}
