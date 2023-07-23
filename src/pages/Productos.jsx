@@ -39,9 +39,8 @@ const data_lana = [
 import { Link } from "react-router-dom";
 
 import yarn_icon from "../assets/icons/yarn.svg";
-import l_arrow from "../assets/icons/l-arrow.svg";
 
-export default function Products() {
+export default function Productos() {
   // const [data, setData] = useState([]);
   // setData(data_lana);
   const proElements = data_lana.map((lana) => (
