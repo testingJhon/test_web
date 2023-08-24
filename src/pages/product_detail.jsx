@@ -51,7 +51,7 @@ export default function ProductDetail() {
       <section className="product-detail-container">
         <Link to=".." className="back-button">
           <span>&larr;</span>
-          Volver a la lista
+          <p>Volver a la lista</p>
         </Link>
         {data_lana[0] ? findLanaID(params.id) : <div>cargando</div>}
       </section>

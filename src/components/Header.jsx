@@ -6,14 +6,14 @@ import "../assets/smarthphone.scss";
 function Header() {
   return (
     <header>
-      <Link to="/" className="site-logo">
+      <Link to="/products" className="site-logo">
         <span className="logo-puca">Puca</span>Huayta
         <span className="logo-sufix">TEX</span>
       </Link>
       <nav>
         {/* <NavLink to="/about">Nosotros</NavLink> */}
         <NavLink to="/products">Productos</NavLink>
-        <NavLink to="/host">Contactenos</NavLink>
+        <NavLink to="/contactus">Contactenos</NavLink>
       </nav>
     </header>
   );

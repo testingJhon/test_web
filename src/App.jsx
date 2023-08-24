@@ -1,6 +1,4 @@
 import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
 import { BrowserRouter, Routes, Route, Link, Outlet } from "react-router-dom";
 
 import Home from "./pages/home";
@@ -25,6 +23,7 @@ import "./assets/colors.scss";
 import "./assets/app.scss";
 import "./assets/styles_base.scss";
 import "./assets/products.scss";
+import "./assets/web.scss";
 
 function App() {
   return (
@@ -42,7 +41,7 @@ function App() {
             </Route>
           </Route>
 
-          <Route path="host" element={<HostLayout />}>
+          <Route path="contactus" element={<HostLayout />}>
             <Route index element={<Dashboard />} />
             <Route path="income" element={<Income />} />
             <Route path="review" element={<Review />} />

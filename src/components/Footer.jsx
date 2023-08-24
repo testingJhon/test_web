@@ -6,7 +6,7 @@ export default function Footer() {
         &#169;
         <span>#Puca</span>Huayta
       </div>
-      <div>RUC: 20200700071</div>
+      <div>RUC: 20611364645</div>
     </footer>
   );
 }

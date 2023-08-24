@@ -1,9 +1,4 @@
 @import "./colors.scss";
-a.back-button {
-  padding: 0 5px;
-  display: block;
-  //   font-size: 1.2rem;
-}
 
 section.product-detail-container {
   padding: 8px 0;
@@ -13,12 +8,16 @@ section.product-detail-container {
   // flex-direction: column;
   // justify-content: center;
 }
-
 a.back-button {
+  padding: 0 5px;
+  display: block;
   color: $h3-color;
   font-weight: 400;
   padding-top: 5px;
-  // border: black 1px solid;
+  display: flex;
+  p {
+    text-decoration: underline;
+  }
 }
 
 h2.tipe span {
@@ -33,6 +32,7 @@ h2.tipe span {
   // justify-content: center;
   // justify-items: center;
   align-items: flex-start;
+  // margin: 0 auto;
 }
 
 img.details-main-img {
@@ -48,6 +48,7 @@ img.details-main-img {
 
 section.nav-details {
   padding-left: 20px;
+  margin: 0 auto;
 }
 
 nav.nav-description {
@@ -61,11 +62,12 @@ nav.nav-description {
 
   a {
     color: $primary-color;
-    font-weight: 300;
-    .active {
-      // font-weight: 400;
-      color: red;
-    }
+    font-weight: 400;
+  }
+  a.active {
+    // color: red;
+    // font-weight: 600;
+    text-decoration: underline;
   }
 }
 

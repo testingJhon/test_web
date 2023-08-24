@@ -5,32 +5,19 @@ export const data_lana = [
     id: 1,
     tipo: "lana",
     name_ref: "APN",
-    img: [
-      "https://www.mundolanar.com/blog/wp-content/uploads/2013/12/tres-conos.jpg",
-      "https://pe.all.biz/img/pe/catalog/24521.jpeg",
-    ],
-    price_sol: 36,
-    price_dol: 4,
+    img: ["../../public/lana/3conos.jpg", "../../public/lana/6conos.jpeg"],
   },
   {
     id: 2,
     tipo: "lana",
     name_ref: "Pluma",
-    img: [
-      "https://www.mundolanar.com/blog/wp-content/uploads/2013/12/tres-conos.jpg",
-      "https://pe.all.biz/img/pe/catalog/24521.jpeg",
-    ],
-    price_sol: 36,
-    price_dol: 4,
+    img: ["../../public/lana/3conos.jpg", "../../public/lana/6conos.jpeg"],
   },
   {
     id: 3,
     tipo: "lana",
     name_ref: "Pluma de cristal",
-    img: [
-      "https://www.mundolanar.com/blog/wp-content/uploads/2013/12/tres-conos.jpg",
-      "https://pe.all.biz/img/pe/catalog/24521.jpeg",
-    ],
+    img: ["../../public/lana/3conos.jpg", "../../public/lana/6conos.jpeg"],
   },
 ];
 

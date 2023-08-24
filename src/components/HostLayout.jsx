@@ -4,7 +4,7 @@ export default function HostLayout() {
   return (
     <>
       <nav>
-        <NavLink end to="/host">
+        <NavLink end to="/contactus">
           Dashboard
         </NavLink>
         <NavLink to="/host/income">income</NavLink>
